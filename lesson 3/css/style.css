@@ -80,10 +80,6 @@ h1 {
   font-size: 24px;
 }
 
-li {
-  text-align: -webkit-match-parent;
-}
-
 #header .menu {
   padding: 0;
   margin: 0;
@@ -152,3 +148,17 @@ li {
   background: #fff;
   padding: 15px 25px;
 }
+
+ .top-trusted-companies .title { 
+  text-align: center;
+  color: #244D4D;
+  font-size: 32px;
+}
+
+.trusted-companies-list {
+  padding: 0;
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+} 

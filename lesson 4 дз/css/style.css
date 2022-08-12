@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?yy7ac");
+  src: url("../fonts/icomoon.eot?yy7ac#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?yy7ac") format("truetype"),
+    url("../fonts/icomoon.woff?yy7ac") format("woff"),
+    url("../fonts/icomoon.svg?yy7ac#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-video:before {
+  content: "\e901";
+  border: 1px;
+}
+.icon-search:before {
+  content: "\e900";
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1138px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+/* .nine-columns {
+    display: flex;
+} */
+
+.header .section .img {
+  width: 1920px;
+  height: 393px;
+}
+
+.quote {
+  color: #7b7b7c;
+}
+
+.card {
+  width: 360px;
+  /* display: flex; */
+}
+
+.events .card .content {
+  margin: 17px 28px 26px 39px;
+}
+
+.card .shadow-holder {
+  box-shadow: 0px 10px 40px rgba(200, 202, 255, 0.45);
+}
+
+.events .card .content .event-title {
+  /* text-align: center; */
+  color: #000637;
+}
+
+.events .card .content .event-title {
+  padding: 0 0 10px;
+}
+
+.events .card .content .quote {
+  padding: 0 0 10px;
+}
+
+.events .card .content .webinar {
+  padding: 0 0 10px 10px;
+  color: #7b7b7c;
+}
+
+.card .bg-frame li {
+  display: flex;
+  text-align: center;
+}
+
+.events {
+  margin: 97px;
+}
+
+.events .three-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .three-card .content {
+    flex-wrap: wrap;
+  }
+
+  .three-card .event-description {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+
+  .three-card .event-title {
+    padding: 0 0 10px;
+  }
+
+  .three-card .content .event-record {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .three-card .webinar {
+    margin: 0;
+    order: 2;
+  }
+}

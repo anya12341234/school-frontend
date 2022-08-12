@@ -63,6 +63,12 @@ h1 {
   line-height: 1.23;
 }
 
+h2 {
+  color: #242424;
+  font-size: 32px;
+  line-height: 1.62;
+}
+
 #header {
   padding: 26px 0;
 }
@@ -149,6 +155,15 @@ h1 {
   padding: 15px 25px;
 }
 
+.btn-green {
+  font-size: 12px;
+  background:#244d4d;
+  color: #fff;
+  min-width: 78px;
+  padding: 9px 15px;
+  line-height: 1.17;
+}
+
  .top-trusted-companies .title { 
   text-align: center;
   color: #244D4D;
@@ -162,3 +177,133 @@ h1 {
   display: flex;
   justify-content: space-around;
 } 
+
+.top-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 0 80px;
+}
+
+.top-wrapper p {
+  margin: 0;
+}
+
+.top-wrapper .btn-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+
+.top-wrapper .btn-list li {
+  margin-left: 15px;
+}
+
+.top-wrapper .btn-list i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f6;
+  color: #d1cece;
+}
+
+.top-wrapper .btn-list i.icon-arrow-right {
+  color: #666;
+}
+
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.three-columns .columns {
+  padding: 15px;
+  width: 33.33%;
+  display: flex;
+}
+
+.three-columns .columns .shadow-holder {
+  box-shadow: 8px 13px 26px rgba(0, 0, 0, 0.07);
+}
+
+.three-columns .bg-frame {
+  padding: 30px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.three-columns .left-box {
+  padding:0 15px 0 0;
+
+}
+
+
+.three-columns .description {
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.three-columns .price {
+  color: #154444;
+  font-size: 24px;
+  line-height: 1.29;
+}
+
+.three-columns .col-list {
+  list-style: none;
+  display: flex;
+  margin: 0 0 20px;
+}
+
+.three-columns .col-list li {
+  margin-left: 8px;
+}
+
+.three-columns .col-list button {
+  width: 26px;
+  height: 26px;
+  background: #ECF4FF;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-size: 10px;
+  color: #000;
+  border-radius: 50%;
+}
+
+.three-columns .col-list button:hover  {
+  background: #EF5423;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .three-columns .bg-frame {
+    flex-wrap: wrap;
+  }
+
+  .three-columns .description {
+    margin: 0 0 10px;
+    font-size: 14px;  }
+
+    .three-columns .left-box {
+      padding:0 0 10px ;
+    }
+
+  .three-columns .bg-frame .right-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .three-columns .col-list {
+    margin: 0;
+    order: 2; 
+  }
+}
+

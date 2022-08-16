@@ -454,7 +454,6 @@ h2 {
   padding-left: 100px;
 }
 
-
 .our_customers_section .col-info .title {
   margin-top: 105px;
   margin-bottom: 0;
@@ -469,6 +468,42 @@ h2 {
   font-size: 20px;
   line-height: 1.2;
   color: #383738;
+}
+
+.our_customers_section .author .img {
+  /* padding: 40px 0; */
+  width: 50px;
+}
+
+.our_customers_section .author .name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+}
+
+.our_customers_section .col-img {
+  position: relative;
+}
+
+.our_customers_section .col-img .circle {
+  position: absolute;
+  left: 0;
+}
+
+.our_customers_section .author .rating {
+  padding-left: 10px;
+  padding-top: 4.42px;
+}
+
+.our_customers_section .author {
+  margin-top: 40px;
+  display: flex;
+}
+
+.our_customers_section .rating button:hover {
+  background: #ffb624;
+  color: #ffb624;
 }
 
 /* media */

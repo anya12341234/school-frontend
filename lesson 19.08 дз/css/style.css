@@ -432,8 +432,6 @@ h2 {
   margin: 0;
 }
 
-/* *********** our_customers_section ****** */
-
 .our_customers_section .two-columns {
   display: flex;
   align-items: flex-start;
@@ -441,7 +439,6 @@ h2 {
 }
 
 .our_customers_section .two-columns .col-img {
-  /* flex-shrink: 0; */
   padding-left: 105px;
 }
 
@@ -471,7 +468,6 @@ h2 {
 }
 
 .our_customers_section .author .img {
-  /* padding: 40px 0; */
   width: 50px;
 }
 
@@ -501,11 +497,93 @@ h2 {
   display: flex;
 }
 
-.our_customers_section .rating button:hover {
+.our_customers_section .author .button {
   color: #ffb624;
 }
 
-/* media */
+.form_section {
+  padding: 70px 0;
+}
+
+.form_section .bg-holder {
+  background: #f4f6f6;
+  padding: 70px 0;
+}
+
+.form_section .container {
+  max-width: 1220px;
+}
+.form_section .col_info .title_subscribe {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  padding: 0 68px;
+}
+
+.form_section .col_info .title_phrase {
+  text-align: center;
+  color: #222222;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 24px;
+}
+
+.form_section .register_form {
+  width: 472px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+.register_form .form_row {
+  position: relative;
+}
+
+.register_form label {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+.register_form .form_row.active label {
+  top: 0;
+  transform: translate(0);
+  font-size: 11px;
+}
+
+.form_section .icon-email {
+  color: #7f7f7f;
+  position: absolute;
+  left: 17px;
+  top: 24px;
+}
+
+.register_form input {
+  border: 1px solid #ffffff;
+  height: 67px;
+  width: 100%;
+  max-width: 471.98px;
+  padding: 22px 19px 22px 45px;
+}
+
+
+.register_form .form_row .btn-default {
+  background: #305F64;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 32px 15px 32px;
+  position: absolute;
+  top: 7px;
+  right: 19px;
+  min-width: 125px;
+ 
+}
+
+
 
 @media screen and (max-width: 1024px) {
   .three-columns .bg-frame {

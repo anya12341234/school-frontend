@@ -6,10 +6,7 @@ h1 {
   font-family: "Yeseva One", sans-serif;
 }
 
-strong {
-  font-family: "Unica One", sans-serif;
-}
-
+ 
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -35,11 +32,14 @@ strong {
   padding: 0 0px 80px 0;
 }
 
-.top_section .description .title_collaborate {
+.title_collaborate {
   color: #ffffff;
   font-size: 20px;
   line-height: 24px;
+  font-family: "Unica One", sans-serif;
+  text-transform: uppercase;
 }
+
 
 .top_section .description .start_a_project {
   color: #ffffff;
@@ -65,22 +65,24 @@ strong {
   transform: translate(0);
   font-size: 11px;
 }
-
+.top_section .register_form  .form_row{
+  position: relative;
+  margin: 0 0 16px;
+}
 .register_form input {
   height: 53px;
-  width: 477px;
+  width: 100%;
 }
 
-.register_form .forn_row {
-  position: relative;
-}
+
 .register_form label {
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
   color: #000000;
   position: absolute;
-  left: 45px;
+  top: 50%;
+  left: 27px;
   transform: translateY(-50%);
   transition: all 0.3s;
 }
@@ -97,6 +99,36 @@ strong {
   width: 485px;
   display: flex;
 }
+.top_section  .one_box {
+  background: #C4BCEC;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -61px;
+}
+
+.top_section .two_columns .one_box .number_01 {
+  color: #373C42;
+  font-size: 17px;
+  line-height: 28px;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 19px;
+}
+
+.top_section .two_columns a {
+  text-decoration: none;
+  vertical-align: top;
+  padding:0 0 2px;
+  border-bottom: 1px solid #373C42 ;
+  transition: all 0.3s;
+  
+}
+
+.top_section .two_columns a:hover {
+ border-color: transparent;
+}
 
 .top_section .box_join_our_team {
   background: #9181ff;
@@ -105,6 +137,24 @@ strong {
   margin-left: 70px;
   height: 223px;
   padding: 39px 0 0 40px;
+}
+
+.top_section  .two_box {
+  background: #C4BCEC;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -61px;
+}
+
+.top_section .two_columns .two_box .number_02 {
+  color: #373C42;
+  font-size: 17px;
+  line-height: 28px;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 19px;
 }
 
 .top_section .column .title_join_our_team {
@@ -118,11 +168,15 @@ strong {
   line-height: 25px;
 }
 
-.top_section .column .text_email_team {
-  color: #373c42;
+.top_section .email_team {
   font-size: 17px;
   line-height: 28px;
-  padding: 24px 0;
+  color:  #373C42;
+}
+
+.top_section .email_hello {
+  color:  #373C42;
+  margin-bottom: 24px;
 }
 
 .top_section .just_say_hello {
@@ -132,6 +186,24 @@ strong {
   margin-top: 110px;
   margin-left: 70px;
   padding: 40px 0 0 40px;
+}
+
+.top_section  .three_box {
+  background: #C4BCEC;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -61px;
+}
+
+.top_section .two_columns .three_box .number_03 {
+  color: #373C42;
+  font-size: 17px;
+  line-height: 28px;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 19px;
 }
 
 .top_section .title_just_say_hello {
@@ -161,6 +233,7 @@ strong {
   color: #ffffff;
   font-size: 15px;
   line-height: 20px;
+ 
 }
 
 .top_section .call_us_on_number {
@@ -170,3 +243,11 @@ strong {
 .top_section .number {
   padding: 20px 0 0 6px;
 }
+
+.just_say_hello .call_number {
+  color: #373C42;
+  padding: 5px 0;
+  margin-bottom: 50px;
+  
+}
+

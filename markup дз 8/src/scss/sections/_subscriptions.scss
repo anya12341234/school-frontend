@@ -1,0 +1,92 @@
+.subscriptions {
+  h1,
+  h3 {
+    text-align: center;
+  }
+
+  h1 {
+    color: #0c1417;
+    line-height: 34px;
+  }
+
+  table {
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+      &:nth-child(2) {
+        td {
+          &:first-child {
+            color: #f7931e;
+          }
+
+          &:last-child {
+            font-weight: bold;
+          }
+        }
+      }
+
+      th,
+      td {
+        padding: 20px;
+      }
+
+      th {
+        font-size: 18px;
+
+        &:first-child {
+          font-weight: 100;
+          text-align: left;
+        }
+
+        &:last-child {
+          color: #f7931e;
+        }
+      }
+
+      td {
+        &:first-child {
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+    }
+
+    &.other_table {
+      width: 100%;
+      th {
+        &:nth-child(3) {
+          color: #f7931e;
+        }
+
+        &:last-child {
+          color: #0c1417;
+        }
+      }
+
+      tr {
+        &:nth-child(2) {
+          td {
+            &:nth-child(3) {
+              font-weight: 600;
+            }
+            &:last-child {
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .scroll {
+    overflow-x: auto;
+
+    .line {
+      padding: 0;
+      border: 1px solid rgba(12, 20, 23, 0.5);
+    }
+  }
+}

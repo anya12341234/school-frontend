@@ -1,0 +1,45 @@
+header {
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  font-weight: 300;
+  .container {
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 14px;
+      text-align: left;
+      text-align: right;
+      color: #000000;
+      font-size: 24px;
+      line-height: 136.1%;
+      text-decoration: none;
+      font-weight: 300;
+    }
+    .menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+      line-height: 24px;
+      li {
+        margin: 23px;
+      }
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+    .right-holder {
+      i {
+        margin: 14px;
+      }
+    }
+  }
+}

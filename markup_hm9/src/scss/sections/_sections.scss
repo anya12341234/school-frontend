@@ -1,0 +1,373 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .two-columns {
+    margin-left: -100px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .chekout {
+    margin-top: 125px;
+    font-weight: 400;
+    line-height: 96px;
+    text-align: center;
+  }
+  .col-left {
+    width: 600px;
+
+    .main-shopping-cart {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: 98px;
+
+      .icon-arrow-1 {
+        font-weight: 10%;
+      }
+    }
+    .details {
+      color: #000000;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 44px;
+      margin-top: 36px;
+      margin-bottom: 58px;
+      margin-left: 99px;
+    }
+    .register-form {
+      flex-shrink: 0;
+      margin-left: 98px;
+
+      .form-row {
+        position: relative;
+        margin: 0 0 20px;
+
+        input {
+          border: 1px solid #b6b6b6;
+          width: 100%;
+          max-width: 580px;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          padding: 10px;
+        }
+
+        &.active {
+          label {
+            top: -15px;
+            font-size: 16px;
+            transform: translate(0);
+          }
+        }
+
+        label {
+          font-size: 24px;
+          font-weight: 400;
+          color: #b6b6b6;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: all 0.3s;
+          line-height: 25px;
+          position: absolute;
+        }
+      }
+
+      .required-fields {
+        color: #000000;
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 25px;
+      }
+
+      .custom-checkbox {
+        position: relative;
+        input {
+          position: absolute;
+          left: -9999px;
+          z-index: -10;
+
+          &:checked ~ label {
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+
+        label {
+          position: relative;
+          padding: 0 0 0 26px;
+          cursor: pointer;
+          &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: top;
+            width: 28px;
+            height: 28px;
+            border: 1px solid #000000;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          &:before {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 25px;
+            color: #000000;
+            opacity: 0;
+            transition: all 0.3s;
+          }
+        }
+      }
+      .title-by-continuing {
+        .by-continuing {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          top: 5px;
+          margin-bottom: 30px;
+          margin-left: 40px;
+
+          a {
+            color: #000000;
+          }
+        }
+      }
+
+      .but-next {
+        display: flex;
+        justify-content: right;
+
+        button {
+          background: #fffefc;
+          width: 159px;
+          height: 163px;
+          font-size: 18px;
+          line-height: 2;
+          text-align: center;
+          border-radius: 100px;
+          a {
+            text-decoration: none;
+            text-align: center;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-top: 59px;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .box {
+    .col-right {
+      margin-top: 70px;
+      margin-left: 340px;
+      width: 580px;
+      display: flex;
+      justify-content: flex-start;
+
+      .item {
+        display: flex;
+        width: 600px;
+        .img-column {
+          img {
+            width: 137px;
+            height: 138px;
+            flex-shrink: 0;
+          }
+          .title {
+            padding-left: 45px;
+            strong {
+              font-size: 24px;
+              line-height: 29px;
+              color: #000000;
+              margin-top: 20px;
+              a {
+                color: #000000;
+                text-align: left;
+
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 30px;
+                padding-top: 30px;
+              }
+            }
+          }
+        }
+
+        .line {
+          border: 1px solid #00486d;
+          width: 567px;
+          height: 0px;
+        }
+        .subtotal {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 44px;
+          .text-subtotal {
+            margin-top: 61px;
+          }
+          .price {
+            margin-top: 52px;
+          }
+        }
+        .description-column {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+
+          .title {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 29px;
+            p {
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 98.1%;
+              text-align: center;
+            }
+
+            .text {
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 50px;
+              text-align: left;
+              color: #000000;
+            }
+          }
+
+          .pay {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .counter {
+              font-size: 20px;
+              line-height: 44px;
+              margin-left: 29px;
+
+              span {
+                margin: 0 10px 0;
+              }
+            }
+            .price {
+              font-weight: 300;
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+        }
+      }
+    }
+
+    .delivery-order-items {
+      margin-top: 70px;
+      margin-left: 340px;
+      width: 580px;
+
+      .item {
+        display: flex;
+
+        .radio-button {
+          position: relative;
+          input {
+            position: absolute;
+            left: -9999px;
+            z-index: -10;
+
+            &:checked ~ label {
+              &:before {
+                opacity: 1;
+              }
+            }
+          }
+
+          label {
+            position: relative;
+            padding: 0 0 0 26px;
+            cursor: pointer;
+            &:after {
+              content: "";
+              display: inline-block;
+              vertical-align: top;
+              width: 28px;
+              height: 28px;
+              border: 1px solid #000000;
+              border-radius: 15px;
+              margin-right: 10px;
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+
+            &:before {
+              position: absolute;
+              left: 6px;
+              top: 6px;
+              color: #000000;
+              opacity: 0;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .description {
+          margin-left: 27px;
+          flex: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 50px;
+          }
+
+          .pay {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .price {
+              font-weight: 300;
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+          strong {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 20px;
+          }
+
+          a {
+            color: #000000;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

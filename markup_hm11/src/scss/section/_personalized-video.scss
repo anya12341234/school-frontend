@@ -1,0 +1,50 @@
+.personalized-video-section {
+  .container {
+    display: flex;
+    padding: 0 15px;
+    max-width: 1290px;
+    position: relative;
+
+    .text-block {
+      width: 423px;
+      position: absolute;
+      color: #00486d;
+      bottom: 0;
+      right: 15px;
+
+      .col-right-description {
+        background: #00486d;
+        color: #f2f6f7;
+        padding: 53px 58px 72px 56px;
+
+        h5 {
+          font-weight: 400;
+          font-size: 35px;
+          line-height: 42px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 35px;
+          margin-top: 23px;
+          margin-bottom: 60px;
+        }
+
+        .btn_about_our_firm {
+          display: inline-block;
+          vertical-align: top;
+          min-width: 181px;
+          background: #f2f6f7;
+          border-radius: 4px;
+          padding: 12px 24px 12px 24px;
+          color: #00486d;
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 2;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

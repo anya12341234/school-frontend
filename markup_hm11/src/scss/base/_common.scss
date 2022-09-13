@@ -1,0 +1,37 @@
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-family: "DM Serif Text", serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+section {
+  background: #e4ecf0;
+  position: relative;
+  margin: 0 0 150px;
+//   z-index: -1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 208px;
+    height: 60px;
+    background: url(../img/img-05.svg);
+    background-size: cover;
+  }
+}

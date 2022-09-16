@@ -35,3 +35,21 @@ section {
     background-size: cover;
   }
 }
+
+// section {
+//   background: #e4ecf0;
+//   position: relative;
+//   margin: 0 0 150px;
+//   // z-index: -1;
+
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     left: 20px;
+//     top: 20px;
+//     width: 208px;
+//     height: 60px;
+//     background: url(../img/img-01.svg);
+//     background-size: cover;
+//   }
+// }

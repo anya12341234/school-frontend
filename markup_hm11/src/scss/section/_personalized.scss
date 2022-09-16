@@ -1,20 +1,29 @@
-.personalized-video-section {
+.personalized-section {
   &::before {
-    content: none;
+    // content: none;
+    right: 140px;
+    left: unset;
+    top: 133px;
+    z-index: 0;
+    height: 208px;
   }
 
   .container {
+    background-image: url("../../img/img-02.jpg");
+    background-repeat: no-repeat;
+    height: 680px;
+    border-radius: 2px;
+    background-size: cover;
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     padding: 0 15px;
     max-width: 1290px;
-    position: relative;
 
     .text-block {
       width: 423px;
-      position: absolute;
       color: #00486d;
-      bottom: 0;
-      right: 15px;
+      z-index: 2;
 
       .col-right-description {
         background: #00486d;

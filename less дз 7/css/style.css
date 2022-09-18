@@ -1,0 +1,102 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+#wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.title_subscriptions {
+   font-size: 30px;
+   line-height: 34px;
+   color: #0C1417;
+   text-align: center;
+}
+
+.title_subscription_by_time {
+    font-size: 24px;
+    text-align: center;
+    color:  #0C1417;
+}
+
+.scroll {
+    overflow-x: auto;
+}
+
+ table {
+    text-align: center;
+    table-layout: fixed;
+ }
+
+ .scroll .line{
+   padding: 0;
+   border: 1px solid rgba(12, 20, 23, 0.5);
+ }
+
+
+ table th,
+ table td {
+    padding: 20px;
+
+ }
+
+ table th {
+    font-size: 18px;
+ }
+ table th:first-child {
+    font-weight: 400;
+    text-align: left;
+ }
+
+ table th:last-child {
+    color: #F7931E;
+
+ }
+
+ table tr:nth-child(2) td:first-child {
+    color: #F7931E;
+ }
+
+ table td:first-child {
+    font-weight: bold;
+    text-align: left;
+ }
+
+ table tr:nth-child(2) td:last-child {
+    font-weight: bold;
+ }
+
+ 
+ .other_table th:nth-child(3) {
+    color: #F7931E;
+ }
+
+ .other_table th:last-child {
+    color:#0C1417;
+ }
+
+ .other_table tr:nth-child(2) td:last-child {
+   font-weight: 400;
+ }
+ 
+
+ .other_table tr:nth-child(2) td:nth-child(3) {
+    font-weight: 600;
+ }
+
+
+ 
+

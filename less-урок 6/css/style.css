@@ -1,0 +1,52 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.23;
+}
+
+h2 {
+  color: #242424;
+  font-size: 32px;
+  line-height: 1.62;
+}
+
+.form-section {
+  background: #f5f5f8;
+  padding: 100px 0;
+}
+
+.form-section .bg-holder {
+  background: #fff;
+  padding: 98px;
+}
+
+.form-section .container {
+  max-width: 1186px;
+}
+
+.form-section .two-columns {
+  display: flex;
+}
+
+.form-section .text-col h4 {
+  font: 700 36px/1.33 "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.form-section .register-form {
+  width: 38.5%;
+  flex-shrink: 0;
+  margin-left: 98px;
+}
+
+

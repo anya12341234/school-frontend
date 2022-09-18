@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+*:focus {
+  outline: none;
+}
+
+.container .menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+#box {
+  width: 500px;
+  height: 500px;
+
+  svg {
+    .circle {
+      animation: rotate infinite 6s linear;
+      transform: translate(0, 30px);
+      //   transform-origin: 50% 136px;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(0, 30px);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 30px);
+  }
+}

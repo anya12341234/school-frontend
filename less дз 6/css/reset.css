@@ -1,0 +1,14 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+*:focus {
+  outline: none;
+}
+

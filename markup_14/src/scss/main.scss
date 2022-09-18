@@ -1,0 +1,241 @@
+$breakpoints: (
+  "xs-phone": 375px,
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "widescreen": 1200px,
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);
+
+// ligatured operators ≥ ≤
+
+@import "vendors/include-media";
+@import "vendors/normalize";
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/reset";
+@import "base/typography";
+@import "base/forms";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+#wrapper {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  padding: 114px 0 0;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 43px 0;
+
+  @include media("<desktop") {
+    padding: 12px 0;
+  }
+
+  @media screen and (max-height: 1024px) {
+    
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    color: $white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 0 0 20px;
+  }
+
+  #nav {
+    transition: 0.3s all;
+    @include media("<=desktop") {
+      right: -200vw;
+    }
+    @include media("<desktop") {
+      position: absolute;
+      top: 100%;
+      background: $body-backround;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+
+  .menu {
+    @extend %listreset;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+
+    @include media("<desktop") {
+      display: block;
+      padding: 20px;
+      font-size: 15px;
+    }
+
+    li {
+      padding: 0 20px;
+      @include media("<desktop") {
+        margin: 0 0 20px;
+      }
+    }
+
+    a {
+      color: $gray;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.06em;
+
+      &:hover,
+      &:active {
+        color: $base-color-1;
+      }
+    }
+  }
+}
+
+.nav-opener {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 3px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 6px 0 4px 10px;
+
+  @include media(">desktop") {
+    display: none;
+  }
+  &:before,
+  &:after,
+  & span {
+    background: $white;
+    border-radius: 4px;
+    position: absolute;
+    top: 16px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    margin-top: -2px;
+    transition: all 0.2s linear;
+  }
+  &:before,
+  &:after {
+    content: "";
+    top: 10px;
+  }
+  &:after {
+    top: 22px;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.nav-active {
+  #nav {
+    right: 0 !important;
+    // opacity: 1;
+  }
+
+  .nav-opener {
+    span {
+      opacity: 0;
+    }
+
+    &:after,
+    &:before {
+      transform: rotate(45deg);
+      top: 16px !important;
+      left: 15%;
+      right: 15%;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.visual-section {
+  margin: -114px 0 0;
+  padding: 87px 0 0;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .align-block {
+    max-width: 480px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 137px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 13px;
+  border: 1px solid $base-color-1;
+  padding: 11px 15px;
+  color: $base-color-1;
+
+  &:hover,
+  &:active {
+    background: $base-color-1;
+    color: $white;
+  }
+}
+
+.latest_work_section{
+  padding: 50px 0;
+   .three-columns{
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+      width: 33.33%;
+      padding: ;
+        }
+   }
+}

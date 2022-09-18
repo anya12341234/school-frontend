@@ -1,0 +1,253 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Yeseva One", sans-serif;
+}
+
+ 
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.top_section strong {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #373c42;
+  padding: 0 0 19px;
+}
+
+.top_section h1 {
+  font-size: 40px;
+  line-height: 46px;
+  color: #373c42;
+}
+.top_section .paragraph {
+  color: #616161;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0 0px 80px 0;
+}
+
+.title_collaborate {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Unica One", sans-serif;
+  text-transform: uppercase;
+}
+
+
+.top_section .description .start_a_project {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+  top: 11px;
+  left: 40px;
+  font-family: "Roboto";
+}
+
+.top_section .description .text_email {
+  color: #373c42;
+  font-size: 17px;
+  line-height: 28px;
+  padding: 34px 0;
+}
+.top_section .register_form {
+  width: 100%;
+}
+
+.register_form .active label {
+  top: 0;
+  transform: translate(0);
+  font-size: 11px;
+}
+.top_section .register_form  .form_row{
+  position: relative;
+  margin: 0 0 16px;
+}
+.register_form input {
+  height: 53px;
+  width: 100%;
+}
+
+
+.register_form label {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 27px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.top_section .two_columns {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top_section .two_columns .box_collaborate {
+  background: #9181ff;
+  padding: 39px 40px 99px 40px;
+  border-radius: 3px;
+  width: 485px;
+  display: flex;
+}
+.top_section  .one_box {
+  background: #C4BCEC;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -61px;
+}
+
+.top_section .two_columns .one_box .number_01 {
+  color: #373C42;
+  font-size: 17px;
+  line-height: 28px;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 19px;
+}
+
+.top_section .two_columns a {
+  text-decoration: none;
+  vertical-align: top;
+  padding:0 0 2px;
+  border-bottom: 1px solid #373C42 ;
+  transition: all 0.3s;
+  
+}
+
+.top_section .two_columns a:hover {
+ border-color: transparent;
+}
+
+.top_section .box_join_our_team {
+  background: #9181ff;
+  width: 565px;
+  border-radius: 3px;
+  margin-left: 70px;
+  height: 223px;
+  padding: 39px 0 0 40px;
+}
+
+.top_section  .two_box {
+  background: #C4BCEC;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -61px;
+}
+
+.top_section .two_columns .two_box .number_02 {
+  color: #373C42;
+  font-size: 17px;
+  line-height: 28px;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 19px;
+}
+
+.top_section .column .title_join_our_team {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.top_section .column .always_looking {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.top_section .email_team {
+  font-size: 17px;
+  line-height: 28px;
+  color:  #373C42;
+}
+
+.top_section .email_hello {
+  color:  #373C42;
+  margin-bottom: 24px;
+}
+
+.top_section .just_say_hello {
+  background: #9181ff;
+  border-radius: 3px;
+  height: 378px;
+  margin-top: 110px;
+  margin-left: 70px;
+  padding: 40px 0 0 40px;
+}
+
+.top_section  .three_box {
+  background: #C4BCEC;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -61px;
+}
+
+.top_section .two_columns .three_box .number_03 {
+  color: #373C42;
+  font-size: 17px;
+  line-height: 28px;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 19px;
+}
+
+.top_section .title_just_say_hello {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.top_section .just_say_hello .text_hello {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 25px;
+}
+.top_section .just_say_hello .text_hə_ləʊ {
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  letter-spacing: 0.25px;
+}
+
+.top_section .just_say_hello .used_as {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+}
+.top_section .just_say_hello .text_1811 {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+ 
+}
+
+.top_section .call_us_on_number {
+  display: flex;
+}
+
+.top_section .number {
+  padding: 20px 0 0 6px;
+}
+
+.just_say_hello .call_number {
+  color: #373C42;
+  padding: 5px 0;
+  margin-bottom: 50px;
+  
+}
+

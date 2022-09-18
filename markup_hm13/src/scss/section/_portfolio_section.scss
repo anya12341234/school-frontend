@@ -1,0 +1,27 @@
+.portfolio_section {
+  background-color: #f6f6f6;
+  color: #070707;
+  padding-bottom: 100px;
+  .container {
+    padding-top: 113px;
+    text-align: center;
+    strong {
+      font-size: 34px;
+      line-height: 42px;
+    }
+    .img {
+      margin-top: 57px;
+      margin-bottom: 45px;
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 22px;
+      color: #070707;
+
+      &:hover {
+        color: $base-color-1;
+      }
+    }
+  }
+}

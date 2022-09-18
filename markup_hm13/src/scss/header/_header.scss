@@ -1,0 +1,137 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 43px 0;
+
+  @include media("<desktop") {
+    padding: 12px 0;
+  }
+
+  @media screen and (max-height: 1024px) {
+  }
+  .container {
+    #nav {
+      transition: 0.3s all;
+      @include media("<=desktop") {
+        right: -200vw;
+      }
+      @include media("<desktop") {
+        position: absolute;
+        top: 100%;
+        background: $body-backround;
+        height: 100vh;
+        width: 100%;
+      }
+    }
+    .menu {
+      @extend %listreset;
+      display: flex;
+      justify-content: space-between;
+
+      @include media("<desktop") {
+        display: block;
+        padding: 20px;
+        font-size: 15px;
+      }
+
+      li {
+        list-style: none;
+        @include media("<desktop") {
+          margin: 0 0 20px;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        &:hover,
+        &:active {
+          color: #000000;
+        }
+      }
+    }
+    .line {
+      margin-top: 31px;
+      border: 1px solid #828282;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  .nav-opener {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    border-radius: 3px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 6px 50px 4px 10px;
+
+    @include media(">desktop") {
+      display: none;
+    }
+
+    &:before,
+    &:after,
+    & span {
+      // content: "";
+      background: $black;
+      border-radius: 4px;
+      position: absolute;
+      top: 16px;
+      left: 10%;
+      right: 10%;
+      height: 3px;
+      margin-top: -2px;
+      transition: all 0.2s linear;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      width: 36px;
+      top: 10px;
+    }
+
+    &:after {
+      top: 22px;
+    }
+
+    & span {
+      width: 36px;
+    }
+  }
+
+  &:after {
+    top: 22px;
+  }
+}
+
+body.nav-active {
+  #nav {
+    right: 0 !important;
+  }
+
+  .nav-opener {
+    span {
+      opacity: 0;
+    }
+
+    &:after,
+    &:before {
+      transform: rotate(45deg);
+      top: 16px !important;
+      left: 15%;
+      right: 15%;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

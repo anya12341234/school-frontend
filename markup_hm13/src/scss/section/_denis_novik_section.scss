@@ -1,0 +1,82 @@
+.denis_novik_section {
+  display: flex;
+  justify-content: space-between;
+  .container {
+    .description {
+      color: #070707;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 375px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      h1 {
+        margin-top: 40px;
+        font-size: 47.3392px;
+        line-height: 59px;
+        text-align: left;
+        text-align: left;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 155.65px;
+        text-align: left;
+        margin-top: 94px;
+
+        @media screen and (max-width: 375px) {
+          margin-top: 15px;
+        }
+      }
+
+      .wrap-language {
+        position: relative;
+
+        @media screen and (max-width: 375px) {
+          align-self: flex-end;
+        }
+
+        ul.wrapper-language {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+
+          transform: rotate(-90deg);
+          margin-top: 40px;
+          margin-right: -20px;
+
+          li {
+            list-style: none;
+
+            &:first-child {
+              &:after {
+                content: "";
+
+                border: 1px solid black;
+                margin: 0 5px;
+              }
+            }
+            a {
+              text-decoration: none;
+              color: #828282;
+              font-size: 16px;
+              line-height: 20px;
+
+              &:hover {
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+    .img-box {
+      margin-top: 49px;
+    }
+  }
+}

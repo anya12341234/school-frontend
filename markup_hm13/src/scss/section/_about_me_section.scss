@@ -1,0 +1,25 @@
+.about_me_section {
+  background-color: #f6f6f6;
+  .container {
+    .col-img {
+      margin-top: 105px;
+      padding-bottom: 107px;
+      padding-top: 105px;
+      text-align: center;
+
+      .about_me {
+        font-size: 34px;
+        line-height: 42px;
+        color: #070707;
+      }
+
+      .title {
+        p {
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

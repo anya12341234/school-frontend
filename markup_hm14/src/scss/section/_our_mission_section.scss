@@ -1,0 +1,38 @@
+.our_mission_section {
+  margin-top: 150px;
+  color: #1c2323;
+  .container {
+    .two-columns {
+      display: flex;
+      @include media("<desktop") {
+        flex-wrap: wrap;
+      }
+      .col-right {
+        margin-left: 142px;
+        @include media("<desktop") {
+          margin: 10px;
+        }
+        p {
+          margin-left: 3px;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 60px;
+          color: #1c2323;
+          margin-bottom: 50px;
+
+          @include media("<desktop") {
+            font-size: 35px;
+            line-height: 50px;
+          }
+        }
+        .description {
+          margin-left: 0;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 45px;
+          color: #486958;
+        }
+      }
+    }
+  }
+}

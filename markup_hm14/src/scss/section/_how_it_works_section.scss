@@ -1,0 +1,88 @@
+.how_it_works_section {
+  margin-top: 120px;
+  .container {
+    h1 {
+      font-weight: 800;
+      line-height: 105px;
+      color: #1c2323;
+      text-align: center;
+
+      @include media("<desktop") {
+        font-size: 45px;
+      }
+    }
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 45px;
+      color: #404242;
+    }
+
+    .two-columns {
+      display: flex;
+
+      position: relative;
+
+      @include media("<desktop") {
+        flex-wrap: wrap;
+      }
+
+      .button-play {
+        position: absolute;
+        left: 986px;
+        top: 196px;
+        background: #ffffff;
+        box-shadow: 0px 0px 0px 14px rgba(255, 255, 255, 0.4);
+        border-radius: 65px;
+        width: 100px;
+        height: 100px;
+
+        @include media("<desktop") {
+          left: unset;
+          right: 0;
+          top: 10px;
+        }
+
+        img {
+          margin-top: 29px;
+          margin-left: 43px;
+        }
+      }
+
+      .col-right {
+        @include media("<desktop") {
+          width: 100%;
+        }
+        .title-box {
+          background: #ccf0e6;
+          border-radius: 0px 10px 10px 0px;
+          color: #486958;
+          padding: 70px 106px 80px 115px;
+          width: 549px;
+
+          @include media("<desktop") {
+            padding: 15px 10px;
+            width: 100%;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+
+            margin-bottom: 41px;
+            text-align: left;
+            color: #486958;
+          }
+          span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #486958;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.get_the_inspiration_section {
+  margin-top: 153px;
+  color: #1c2323;
+
+  @include media("<desktop") {
+    margin-top: 40px;
+  }
+
+  .container {
+    .two-columns {
+      display: flex;
+
+      @include media("<desktop") {
+        flex-wrap: wrap-reverse;
+      }
+
+      .col-left {
+        h1 {
+          width: 674px;
+          font-weight: 800;
+          line-height: 105px;
+          color: #1c2323;
+          margin-bottom: 50px;
+
+          @include media("<desktop") {
+            width: 370px;
+
+            font-size: 45px;
+            line-height: 45px;
+          }
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 45px;
+          color: #404242;
+          width: 735px;
+          margin-bottom: 70px;
+
+          @include media("<desktop") {
+            width: unset;
+          }
+        }
+
+        .btn {
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 38px;
+          background: #58a9a5;
+          border-radius: 20px 20px 20px 0px;
+          padding: 21px 83px 21px 90px;
+        }
+      }
+
+      .col-right {
+        position: relative;
+        margin-left: 71px;
+
+        @include media("<desktop") {
+          margin: 0;
+          margin-bottom: 15px;
+        }
+
+        .rectangle {
+          position: absolute;
+          z-index: -1;
+        }
+        .interior {
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

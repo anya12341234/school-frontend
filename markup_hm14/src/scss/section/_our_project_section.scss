@@ -1,0 +1,78 @@
+.our_project_section {
+  margin-top: 120px;
+  @include media("<desktop") {
+    margin-top: 20px;
+  }
+  .container {
+    h1 {
+      font-weight: 800;
+      line-height: 105px;
+      color: #1c2323;
+      text-align: center;
+      margin-bottom: 20px;
+
+      @include media("<desktop") {
+        font-size: 45px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 45px;
+      color: #404242;
+      text-align: center;
+      margin-bottom: 51px;
+    }
+    .divider {
+      margin: 0 auto;
+      border-top: 5px solid #58a9a5;
+      width: 135px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 135px;
+        border-top: 5px solid #58a9a5;
+        top: 10px;
+      }
+    }
+
+    .three-columns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 104px;
+      flex-wrap: wrap;
+
+      .col {
+        width: 450px;
+
+        @include media("<desktop") {
+          width: 370px;
+          margin-top: 35px;
+        }
+
+        &:nth-child(2) h4 {
+          margin-top: 35px;
+        }
+        h4 {
+          font-weight: 700;
+
+          line-height: 60px;
+          color: #58a9a5;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 19px;
+          line-height: 30px;
+          color: #486958;
+          text-align: left;
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}

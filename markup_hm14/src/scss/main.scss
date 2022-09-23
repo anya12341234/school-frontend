@@ -10,6 +10,16 @@
 @import "base/reset";
 @import "base/typography";
 @import "base/forms";
+@import "base/common";
+
+@import "header/header";
+
+@import "section/get_the_inspiration_section";
+@import "section/how_it_works_section";
+@import "section/our_mission_section";
+@import "section/our_project_section";
+@import "section/testimonial-section";
+@import "section/contact_us_section";
 
 body {
   display: flex;
@@ -24,10 +34,14 @@ body {
   @include media("<phone") {
     font-size: 13px;
   }
+
+  #wrapper {
+    @include media("<=desktop") {
+      padding: 30px 0 0;
+    }
+  }
 }
 
-#wrapper {
-  overflow: hidden;
-  position: relative;
-  flex-grow: 1;
+body {
+  font-family: "Poppins", sans-serif;
 }

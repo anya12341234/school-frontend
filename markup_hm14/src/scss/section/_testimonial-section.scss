@@ -1,0 +1,156 @@
+.testimonial-section {
+  margin-top: 250px;
+  @include media("<desktop") {
+    margin-top: 60px;
+  }
+  .container {
+    h1 {
+      font-weight: 800;
+      text-align: center;
+      line-height: 105px;
+      color: #1c2323;
+      margin-bottom: 0px;
+      @include media("<desktop") {
+        font-size: 45px;
+      }
+    }
+
+    .img-column {
+      max-width: 1242px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 0;
+      flex-wrap: wrap;
+
+      align-items: center;
+
+      margin: 20px auto 62px auto;
+
+      .img-box {
+        img {
+          @include media("<desktop") {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  .two-columns {
+    display: flex;
+
+    @include media("<desktop") {
+      flex-wrap: wrap;
+    }
+
+    .col-left {
+      .rectangle {
+        width: 615px;
+        height: 700px;
+
+        @include media("<desktop") {
+          width: unset;
+          height: unset;
+        }
+      }
+    }
+
+    .col-right {
+      width: 997px;
+      height: 700px;
+      @include media("<desktop") {
+        width: unset;
+        height: unset;
+      }
+
+      .title-box {
+        background: #ccf0e6;
+        color: #58a9a5;
+        .description-columns {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 135px 123px 135px;
+
+          @include media("<desktop") {
+            margin: 0;
+            flex-wrap: wrap;
+
+            justify-content: center;
+          }
+
+          .col {
+            width: 119px;
+
+            @include media("<desktop") {
+              width: 300px;
+            }
+
+            p {
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 30px;
+              text-align: left;
+
+              @include media("<desktop") {
+                margin: 0;
+              }
+            }
+            .number {
+              color: #58a9a5;
+              font-weight: 800;
+              line-height: 105px;
+              margin-top: 50px;
+              text-align: left;
+              @include media("<desktop") {
+                margin: 0;
+              }
+            }
+          }
+        }
+        .title-blockquote {
+          padding-left: 138px;
+          padding-right: 107px;
+          padding-bottom: 37px;
+
+          position: relative;
+          .guote {
+            position: absolute;
+            left: 97px;
+            top: -52px;
+            z-index: 2;
+
+            @include media("<desktop") {
+              left: 5px;
+              top: -20px;
+            }
+          }
+
+          @include media("<desktop") {
+            margin: 0;
+            padding: 0;
+          }
+
+          blockquote {
+            width: 752px;
+            position: relative;
+            z-index: 2;
+            margin-left: 0;
+            color: #486958;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 38px;
+            @include media("<desktop") {
+              width: unset;
+              padding: 20px;
+            }
+          }
+          .roscoe {
+            margin-top: 50px;
+            font-size: 26px;
+            color: #58a9a5;
+          }
+        }
+      }
+    }
+  }
+}
